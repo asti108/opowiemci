@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Aesthetic - GitHub Pages Template</title>
+    <title>Listy Ojca do Córki</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap');
 
@@ -22,35 +22,42 @@
 
         header {
             width: 100%;
-            max-width: 700px;
+            max-width: 900px;
             padding: 80px 20px 40px 20px;
             text-align: center;
         }
 
-        header h1 {
+        /* Main website title */
+        .main-title {
             font-weight: 600;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            letter-spacing: -0.5px;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+            color: #222;
         }
 
-        nav {
-            margin-top: 20px;
+        /* Typewriter banner */
+        .typewriter {
+            display: inline-block;
             font-family: 'Inter', sans-serif;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
+            font-size: 1rem;
+            color: #666;
+            border-right: 2px solid #666;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation:
+                typing 5s steps(60, end) forwards,
+                blink 0.8s infinite;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #888;
-            margin: 0 15px;
-            transition: color 0.3s;
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
         }
 
-        nav a:hover {
-            color: #111;
+        @keyframes blink {
+            50% { border-color: transparent; }
         }
 
         main {
@@ -73,9 +80,11 @@
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-top: 0;
+            margin-bottom: 25px;
             line-height: 1.3;
+            color: #222;
         }
 
         p {
@@ -90,11 +99,10 @@
             border-top: 1px solid #eee;
             text-align: center;
             font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            color: #aaa;
+            font-size: 1rem;
+            color: #777;
         }
 
-        /* Aesthetics inspired by Lokanta: Simple borders and subtle color blocks */
         .callout {
             background-color: #f0ede8;
             padding: 30px;
@@ -102,36 +110,60 @@
             font-style: italic;
             margin: 40px 0;
         }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2rem;
+            }
+
+            .typewriter {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Simplicity</h1>
-        <nav>
-            <a href="#">Essays</a>
-            <a href="#">About</a>
-            <a href="#">Archive</a>
-        </nav>
+        <h1 class="main-title">Listy Ojca do Córki</h1>
+
+        <div class="typewriter">
+            Każde słowo tutaj powstało z miłości, troski i nadziei...
+        </div>
     </header>
 
     <main>
         <article>
-            <span class="date">May 10, 2024</span>
-            <h2>The Art of Doing Less</h2>
-            <p>In a world obsessed with productivity, the most radical act is to pause. We often confuse movement with progress, yet the stillest waters run the deepest.</p>
-            <p>When we clear away the clutter of our schedules, we find the space required for meaningful creation. This is not about laziness; it is about essentialism.</p>
-            
+
+            <span class="date">List 1</span>
+
+            <h2>Na początek...</h2>
+
             <div class="callout">
-                "Simplicity is the ultimate sophistication." — Leonardo da Vinci
+                "Skarbie, odkąd się urodziłaś mam wrażenie, jakbym urósł o 10 cm.
+                Już tu jesteś, więc postanowiłem poniżej podzielić się całą wiedzą
+                i dobrocią, o jakiej tylko zdążę Ci napisać.
+                Mam nadzieję, że kiedyś będziesz mieć okazję to przeczytać...
+                Jeśli nie, zostawiam tą stronę jako pamiątkę i pomoc dla wszystkich córek,
+                których ojcowie nie byli obecni lub dostępni emocjonalnie."
             </div>
 
-            <p>Focus on the one thing that matters today. Let the rest fall away. The noise will always be there, but your attention is a finite resource. Protect it fiercely.</p>
+            <p>
+                Ta strona jest miejscem pełnym myśli, doświadczeń i słów,
+                które mają zostać na dłużej. Być może kiedyś okażą się pomocą,
+                wsparciem albo zwykłym przypomnieniem, że byłaś i zawsze będziesz kochana.
+            </p>
+
         </article>
     </main>
 
     <footer>
-        &copy; 2024 Minimalist Press. Built with Zen in mind.
+        Pamiętaj, że Cię Kocham!
     </footer>
 
 </body>
